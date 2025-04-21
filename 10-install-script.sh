@@ -12,6 +12,7 @@ dnf list installed mysql
 
 if [ $? -ne 0 ]
 then 
+    dnf install mysql -y
     if [ $? -ne 0 ]
     then 
         echo "Installing MySQL......FAILURE"
@@ -27,6 +28,7 @@ dnf list installed git
 
 if [ $? -ne 0 ]
 then 
+    dnf install git -y
     if [ $? -ne 0 ]
     then 
         echo "Installing Git......FAILURE"
