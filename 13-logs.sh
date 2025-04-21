@@ -21,7 +21,7 @@ VALIDATE(){
     fi
 }
 
-echo "Script strated executing at: $TIMESTAMP" &>>LOG_FILE_NAME
+echo "Script strated executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
 
 if [ $USERID -ne 0 ]
 then
