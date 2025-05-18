@@ -5,4 +5,4 @@ A="10"
 
 echo "Hello from:$MSG"
 
-eho "Greeting: $GREET"
+echo "Greeting: $GREET"
