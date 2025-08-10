@@ -10,6 +10,8 @@ fi
 
 dnf list installed mysql
 
+echo "Previous status code is $?"
+
 if [ $? -ne 0 ]
 then
     echo "$? is not zero"
