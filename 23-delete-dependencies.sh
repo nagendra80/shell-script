@@ -14,7 +14,7 @@ echo "Previous status code is $?"
 
 if [ $? -ne 1 ]
 then
-    dnf uninstall mysql
+    dnf remove mysql
     echo "MySQL is UNINSTALLED"
 else
     echo "mysql is not available"
@@ -24,7 +24,7 @@ dnf list installed mysql
 
 if [ $? -ne 1 ]
 then
-    dnf uninstall git
+    dnf remove git
     echo "GIT is UNINSTALLED"
 else
     echo "git is not available"
